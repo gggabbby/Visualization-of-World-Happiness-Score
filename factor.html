@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mStyle.css">
+    <title>Happiness Factors</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+</head>
+<body onload="initViz2();">
+    <div id="main">
+        <div id="header">
+            <div id="title">
+                <div id="title_text">
+                    <h1 id = "title1">Visualization of Complex Data_DATS_6401</h1>
+                    <h2 id = "title2">Final Project | Name: Jingya Gao</h2>
+                </div><!-- title text -->
+            </div><!-- title -->
+            <div id="navbar">
+                <a href="region.html">Regions Happiness</a>
+                <a href="factor.html">Happiness Factors</a>
+                <a href="index.html">Global Happiness</a>
+            </div><!-- menubar -->
+        </div><!-- header -->
+
+        <div>
+            <table align="center" style="padding-left: 40px; padding-right: 40px; padding-bottom: 40px;">
+                <tr>
+                    <td>
+                        <p style="font-size: 16px; padding: 20px 30px 20px 30px; text-align: justify;">
+                            Select the top ten and last ten countries in the happiness index in 2019, and visualize 
+                            their GDP per Capita Comparison, Health Life Expectancy Comparison, Freedom to Make Life 
+                            Choice Comparison, Perceptions of Corruption Comparison, Generosity Comparison from 2015 to 2019. 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="tableauViz3"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                As can be seen from the figure, in 2019, the top ten countries in the 
+                                happiness index are Finland, Denmark, Norway, Iceland, Netherlands, Switzerland, 
+                                Sweden, New, Zealand, Canada and Austria. They all scored above 7.2, 
+                                and the highest score was Finland, reaching nearly 7.77 points. The last ten countries 
+                                in the happiness index are Haiti, Botswana, Syria, Malawi, Yemen, Rwanda, Tanzania, 
+                                Afghanistan, Central African Republic and South Sudan. Their scores are all less than 3.6. 
+                                This is nearly half the gap with countries with high levels of happiness.
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- happiness index chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz4"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                It can be seen from the above two graphs that the GDP per 
+                                Capita growth trend of the top 10 countries is close to the same, 
+                                showing an upward trend from 2015 to 2017, a decline from 2017 to 2018, and then 
+                                a rebound trend in 2019. The GDP per Capita trend of the last 10 countries is not regular, 
+                                and the score gap is large. For example, Botswana showed an upward trend from 2015 to 2017, 
+                                while the Central African Republic showed a downward trend in these three years.
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- GDP per Capita chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz5"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                AIt can be seen from the above two graphs that the Health Life Expectancy growth trend 
+                                of the top 10 countries is close to the same, showing a decline trend from 2015 to 2017, 
+                                an upward trend from 2017 to 2019. The Health Life Trend in last10 countries is different. 
+                                But in 2018 to 2019, Health Life Expectancy is on the rise trend in nine countries, 
+                                with the exception of Syria. 
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Health Life Expectancy chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz6"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                From the figure, the Freedom to Make Life Choice trend in top 10 countries is similar 
+                                and the scores are similar. It showed a downward trend in 2015 to 2016, an upward trend 
+                                in 2016-18 and a downward trend in 2018 to 2019. Although the last 10 countries have large 
+                                differences in scores, most countries have had the same trend in The Freedom to Make Life Choice 
+                                in recent years, that is, decline first, then rise, then fall.
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Freedom to Make Life Choice chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz7"></div>
+                        <div class="compare_p1" style="background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                From the chart, it can be seen that the top 10 countries have different trends in 
+                                Perceptions of Corruption, and there is a large gap between the scores of different countries. 
+                                But the overall trend is flattening out. Nine of the last 10 countries had Perceptions 
+                                of Corruption scores between 0 and 0.2 over the years, with the exception of Rwanda. 
+                                Rwanda's Perceptions of Corruption scores have fallen sharply over the years. 
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Perceptions of Corruption chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz8"></div>
+                        <div style="background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                As can be seen from the figure, the score of the top 10 countries and the last 10 countries 
+                                showed a similar trend from 2015 to 2019 in Generosity. It showed a slow upward trend from 2015 to 2017, and a 
+                                downward trend from 2017 to 2018. It rose from 2018 to 2019, but the final score was not as 
+                                high as that of 2015.  At the same time, it can be seen that the scores of most of the last 
+                                10 countries are not significantly different from those of the top 10 countries.
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Generosity chart -->
+            </table>
+            <h3 style="padding-top: 0px; text-align: center;">
+                Conclusion of Happiness Factors
+            </h3>
+            <p style="font-size: 14px; padding: 10px 40px 40px 40px; text-align: justify;">
+                From 2015 to 2019 GDP per Capita Per Capita Lifey Comparison, Freedom to Make Life Choice Choice Comparison, 
+                Perceptions of Corruption Comparison, Generosity Comparison diagram can be seen, there is a clear gap between 
+                the happiness index top 10 countries and the happiness index last 10 countries in terms of GDP per Capita, 
+                Health Life and Freedom to Make Life Choice, with no significant contrast pattern in Pers of Corruption and a 
+                smaller gap in Generosity.  This suggests that while Perceptions of Corruption and Generosity have an impact on 
+                personal well-being, the main factors that affect GDP are GDP Per Capita, Health Life and Freedom to Make Life 
+                Choice. At the same time, it can be found that the happiness index top 10 countries are mainly concentrated in 
+                the western developed countries, which also proved that the economically good region people live a happier life. 
+            </p> <!-- conclusion -->
+        </div> <!-- factor page content -->
+
+        <div id="footer" style="float: right; font-size: 18px; padding: 20px 5px 20px 5px;">
+            Copyright &copy; 2020 | 
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a> | 
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS3</a> | 
+            Developed by <a href="http://www.gwu.edu/">Jingya Gao</a>
+        </div> <!-- footer -->
+
+    </div><!--main-->
+</body>
+</html>

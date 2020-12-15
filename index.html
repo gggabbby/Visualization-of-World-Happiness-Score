@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mStyle.css">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+    <title>Global Happiness (Home)</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body onload="initViz();">
+    <div id="main">
+        <div id="header">
+            <div id="title">
+                <div id="title_text">
+                    <h1 id = "title1">Visualization of Complex Data_DATS_6401</h1>
+                    <h2 id = "title2">Final Project | Name: Jingya Gao</h2>
+                </div><!-- title text -->
+            </div><!-- title -->
+            <div id="navbar">
+                <a href="region.html">Regions Happiness</a>
+                <a href="factor.html">Happiness Factors</a>
+                <a href="index.html">Global Happiness</a>
+            </div><!-- menubar -->
+        </div><!-- header -->
+
+        <div>
+            <h3 style="padding: 20px 0 0 0;"> Introduction to World Happiness Project</h3>
+            <p style="font-size: 14px; padding: 0 50px 0 50px; text-align: justify;">
+                As governments, organizations and social institutions increasingly use happiness scores as a reference to 
+                adjust their decisions, the World Happiness Report has become increasingly important. Experts in statistics, 
+                economics, public policy, psychology and other related fields have also pointed out that a 
+                country's happiness score is closely related to its development and progress. Therefore, this project 
+                will use the happiness index reports of more than 150 countries in the five years from 2015 to 2019 to 
+                analyze what makes people happy and why a country's happiness index is closely related to national development. 
+                This project is mainly divided into three parts: Global happiness, Happiness Factors, and Regions Happiness. 
+                Global happiness mainly displays the changes in the happiness index of countries around the world from 2015 to 2019. 
+                In the Happiness Factors interface, the top ten and last ten countries in 2019 are selected, 
+                and the five factors that determine the degree of happiness are visualized to show the relationship between 
+                the happiness index and these factors. The third part, Regions Happiness, is mainly used to show the differences 
+                between the happiness index and the corresponding two determinants in three different regions of the world.
+            </p>
+        </div> <!-- introduction content -->
+    
+        <div id="tableauViz" style="padding: 10px 40px 30px 40px; outline: black; outline-width: 10px;"></div>
+    
+        <div id="footer" style="float: right; font-size: 18px; padding: 20px 5px 20px 5px;">
+            Copyright &copy; 2020 | 
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a> | 
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS3</a> | 
+            Developed by <a href="http://www.gwu.edu/">Jingya Gao</a>
+        </div><!-- footer -->
+
+    </div><!--main-->
+</body>
+</html>

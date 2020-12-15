@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions Happiness</title>
+    <link rel="stylesheet" href="style/mStyle.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+</head>
+<body onload="initViz3();">
+    <div id="main">
+        <div id="header">
+            <div id="title">
+                <div id="title_text">
+                    <h1 id = "title1">Visualization of Complex Data_DATS_6401</h1>
+                    <h2 id = "title2">Final Project | Name: Jingya Gao</h2>
+                </div><!-- title text -->
+            </div><!-- title -->
+            <div id="navbar">
+                <a href="region.html">Regions Happiness</a>
+                <a href="factor.html">Happiness Factors</a>
+                <a href="index.html">Global Happiness</a>
+            </div><!-- menubar -->
+        </div><!-- header -->
+
+        <div class="trendcontainer">
+            <table align="center" style="padding-left: 40px; padding-right: 40px;">
+                <tr>
+                    <td>
+                        <div id="tableauViz9"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                As can be seen from the chart, there is a large gap between the 
+                                upper and lower levels of happiness in the Western Europe region, from 4.8 to 7.7 points. 
+                                Among them, countries in the northern region scored higher, countries in the south scored lower, 
+                                and the corresponding GDP per Capita and Health Life Expectancy bar charts showed a 
+                                positive correlation between these two factors and the happiness index. 
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Western Europe Chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz10"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                As can be seen from the chart, there is a large gap between the upper and lower levels of 
+                                happiness in the Eastern Asia region, from 4.8 to 6.4 points. Among them, inland areas have 
+                                relatively low scores, and coastal areas have relatively high scores. And the corresponding 
+                                GDP per Capita and Health Life Expectancy bar charts also show a positive correlation between 
+                                these two factors and the happiness index. 
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Eastern Asia Chart -->
+                <tr>
+                    <td>
+                        <div id="tableauViz11"></div>
+                        <div class="compare_p1" style="  background-color: #ffffff;">
+                            <p style="font-size: 15px; padding: 20px 30px 20px 30px; text-align: justify;">
+                                As can be seen from the chart, the happiness index in the Middle East and Northern 
+                                Africa regions ranges from 3 to 7.2 points, with a significant differentiation between the 
+                                two levels. Some countries in the central region scored higher, while others in the 
+                                surrounding region scored lower. The corresponding GDP per Capita and Health Life Expectancy 
+                                bar charts also show a positive correlation between these two factors and the happiness index. 
+                            </p>
+                        </div>
+                    </td>
+                </tr> <!-- Middle East and Northern Africa Chart -->
+            </table>
+
+            <h3 style="padding-top: 30px;">
+                Conclusion of Regions Happiness
+            </h3>
+            <p style="font-size: 14px; padding: 10px 40px 40px 40px; text-align: justify;">
+                As can be seen from the chart of happiness index changes of Western Europe, Eastern Asia, Middle East and 
+                Northern Africa from 2015 to 2019, there is a certain gap in the happiness index scores of each region. 
+                Most countries in the Western Europe region had higher happiness scores, and a small number had lower happiness 
+                scores. In Eastern Asia, happiness scores are concentrated on a scale of five to six. In the Middle East 
+                and Northern Africa, happiness scores were almost evenly split between high and low. The corresponding 
+                GDP per Capita and Health Life Expectancy bar charts show a positive correlation between happiness and 
+                the scores of these two factors. Therefore, it can be learned that the happiness in the hearts of the people 
+                and he lives in which region of the earth is not too directly related, happiness feelings more mainly 
+                depends on the economic level of the living area and the health level of the individual has a great relationship.
+            </p> <!-- conclusion -->
+
+        </div> <!-- region page content -->
+
+        <div id="footer" style="float: right; font-size: 18px; padding: 20px 5px 20px 5px;">
+            Copyright &copy; 2020 | 
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a> | 
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS3</a> | 
+            Developed by <a href="http://www.gwu.edu/">Jingya Gao</a>
+        </div><!-- footer -->
+    </div>
+</body>
+</html>
