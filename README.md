@@ -14,6 +14,8 @@ The database for this project comes from the World Happiness Report data set on 
 
 ## Visualization of Specific Content
 
+- Home Page 
+- <img src="images/index_page.jpg" width=300>
 
 
 ## Conclusion
