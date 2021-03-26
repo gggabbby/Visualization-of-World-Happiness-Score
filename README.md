@@ -15,13 +15,13 @@ The database for this project comes from the World Happiness Report data set on 
 ## Visualization of Specific Content
 
 - Home Page 
-<img src="images/index_page.jpg" width=500>
+<img src="images/index_page.jpg" width=700>
 
 - Factor Page Example 
-<img src="images/factor_sample.jpg" width=500>
+<img src="images/factor_sample.jpg" width=700>
 
 - Region Page Example
-<img src="images/region_sample.jpg" width=500>
+<img src="images/region_sample.jpg" width=700>
 
 
 ## Conclusion
