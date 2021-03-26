@@ -18,10 +18,10 @@ The database for this project comes from the World Happiness Report data set on 
 <img src="images/index_page.jpg" width=500>
 
 - Factor Page Example 
-<img src="factor_sample.jpg" width=500>
+<img src="images/factor_sample.jpg" width=500>
 
 - Region Page Example
-<img src="region_sample.jpg" width=500>
+<img src="images/region_sample.jpg" width=500>
 
 
 ## Conclusion
