@@ -14,6 +14,8 @@ Tableau is a paid software. If users stop the renewal, the dashboard display gen
 
 The database for this project comes from the World Happiness Report data set on the Kaggle website. This project will mainly visualize the relationship between GDP per capita, family, life expectancy, freedom, government trust and the happiness score.
 
+<img src="images/clean_data_samlpe.png" width=700>
+
 ## Visualization of Specific Content
 
 - Home Page 
